@@ -32,9 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        env:
-          VITE_APP_BASE_URL: "openclassrooms-projet-8"
         run: npm run build
+        env:
+          VITE_APP_BASE_URL: "/openclassrooms-projet-8/"
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
