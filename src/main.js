@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import './maugallery';
-import './style.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 
 $(document).ready(function() {
     $('.gallery').mauGallery({

@@ -155,6 +155,10 @@ body {
 	font-size: 22px;
 }
 
+.slider-action {
+	opacity: 1;
+}
+
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
