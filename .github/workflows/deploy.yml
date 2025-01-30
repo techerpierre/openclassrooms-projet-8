@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_APP_BASE_URL: "/openclassrooms-projet-8/"
+          VITE_APP_BASE_URL: "https://techerpierre.github.io/openclassrooms-projet-8/"
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
