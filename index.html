@@ -14,6 +14,7 @@
   <title>Nina Carducci</title>
   <meta name="description"
     content="Portfolio de photographe de Nina Carducci qui référence toutes ses plus belles réalisations." />
+  
   <meta property="og:site_name" content="NinaCarducci" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://techerpierre.github.io/openclassrooms-projet-8/" />
@@ -38,11 +39,47 @@
       "url": "https://techerpierre.github.io/openclassrooms-projet-8/",
       "telephone": "+33556677889",
       "priceRange": "€€€",
-      "offers": {
-        "@type": "Offer",
-        "price": [50, 350, 400],
-        "priceCurrency": "EUR"
-      },
+      "makesOffer" : [
+        {
+          "@type" :"Offer",
+          "priceSpecification" : {
+              "@type" : "UnitPriceSpecification",
+              "priceCurrency" : "EUR",
+              "price" : "350"
+          },
+          "itemOffered" : {
+            "@type" : "ImageObject",
+            "name" : "Shooting photo",
+            "description" : "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos"
+          }
+        },
+        {
+          "@type" :"Offer",
+          "priceSpecification" : {
+              "@type" : "UnitPriceSpecification",
+              "priceCurrency" : "EUR",
+              "price" : "50"
+          },
+          "itemOffered" : {
+            "@type" : "ImageObject",
+            "name" : "Retouches",
+            "description" : "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications"
+          }
+        },
+        {
+          "@type" :"Offer",
+          "priceSpecification" : {
+              "@type" : "UnitPriceSpecification",
+              "priceCurrency" : "EUR",
+              "price" : "400"
+          },
+          "itemOffered" : {
+            "@type" : "ImageObject",
+            "name" : "Album photos",
+            "description" : "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé"
+          }
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "68 avenue Alsace-Lorraine",
@@ -147,34 +184,34 @@
   <section id="gallery">
     <h2 class="title">Portfolio</h2>
     <div class="container py-3">
-      <div class="gallery" style="display: none">
+      <div class="gallery" style="display: none" itemscope itemtype="https://schema.org/Service">
         <img data-gallery-tag="Concert" class="gallery-item"
           src="/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-          alt="Des personnes assistant à un concert." loading="lazy" />
+          alt="Des personnes assistant à un concert." loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Entreprises" class="gallery-item"
           src="/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
           alt="Photographie d'un homme portant une veste de costume noire à revers crantés, avec un focus sur lui."
-          loading="lazy" />
+          loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Entreprises" class="gallery-item"
-          src="/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="" loading="lazy" />
+          src="/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="" loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Mariages" class="gallery-item"
           src="/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-          alt="un groupe de personnes tendant la main" loading="lazy" />
+          alt="un groupe de personnes tendant la main" loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Portrait" class="gallery-item"
           src="/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-          alt="Un gros plan sur une personne portant un collier." loading="lazy" />
+          alt="Un gros plan sur une personne portant un collier." loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Mariages" class="gallery-item"
           src="/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-          alt="Un couple nouvellement marié marchant main dans la main à travers un champ." loading="lazy" />
+          alt="Un couple nouvellement marié marchant main dans la main à travers un champ." loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Portrait" class="gallery-item"
           src="/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-          alt="Une femme portant des lunettes, debout près d'une clôture en mailles de chaîne." loading="lazy" />
+          alt="Une femme portant des lunettes, debout près d'une clôture en mailles de chaîne." loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Concert" class="gallery-item"
           src="/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-          alt="homme en chemise grise à manches quart-de-sac chantant" loading="lazy" />
+          alt="homme en chemise grise à manches quart-de-sac chantant" loading="lazy" itemprop="image"/>
         <img data-gallery-tag="Entreprises" class="gallery-item"
           src="/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-          alt="Une femme utilisant un ordinateur portable." loading="lazy" />
+          alt="Une femme utilisant un ordinateur portable." loading="lazy" itemprop="image"/>
       </div>
     </div>
     <div class="quote">
@@ -192,7 +229,7 @@
   <section id="services">
     <h2 class="title">Mes services</h2>
     <div class="container">
-      <article class="service" itemscope itemtype="https://schema.org/Service">
+      <article class="service" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
         <div class="service__description">
           <h3 itemprop="name">Shooting photo</h3>
           <p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
@@ -200,10 +237,10 @@
         </div>
         <div class="service__price">
           <h4 itemprop="price">350€/demi journée</h4>
-          <span itemprop="includes">Matériel, déplacement inclus</span>
+          <span><span itemprop="includesObject">Matériel</span>, <span itemprop="includesObject">déplacement inclus</span></span>
         </div>
       </article>
-      <article class="service" itemscope itemtype="https://schema.org/Service">
+      <article class="service" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
         <div class="service__description">
           <h3 itemprop="name">Retouches</h3>
           <p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
@@ -211,10 +248,10 @@
         </div>
         <div class="service__price">
           <h4 itemprop="price">50€/photo</h4>
-          <span itemprop="includes">2 AR par photo</span>
+          <span itemprop="includesObject">2 AR par photo</span>
         </div>
       </article>
-      <article class="service" itemscope itemtype="https://schema.org/Service">
+      <article class="service" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
         <div class="service__description">
           <h3 itemprop="name">Album photos</h3>
           <p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
@@ -222,7 +259,7 @@
         </div>
         <div class="service__price">
           <h4 itemprop="price">400€ album A4</h4>
-          <span itemprop="includes">30 pages recto/verso</span>
+          <span itemprop="includesObject">30 pages recto/verso</span>
         </div>
       </article>
     </div>
