@@ -159,6 +159,16 @@ body {
 	opacity: 1;
 }
 
+.slider-action__icon-wrapper {
+	background-color: #00000049;
+	border-radius: 500px;
+	width: 3.5rem;
+	height: 3.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
