@@ -118,7 +118,7 @@
       </ul>
     </div>
   </header>
-  <section id="header">
+  <div id="header">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -133,50 +133,49 @@
         <div class="carousel-item active">
           <img src="/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" srcset="/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp 650w, 
                  /images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp 1200w" class="d-block w-100"
-            alt="Un homme vêtu d'un costume, portant un sac, marchant sur un trottoir en pleine journée.">
+            alt="Un homme vêtu d'un costume, portant un sac, marchant sur un trottoir en pleine journée." sizes="100vw">
         </div>
 
         <div class="carousel-item">
           <img src="/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" srcset="/images/slider/nicholas-green-nPz8akkUmDI-unsplash-small.webp 650w, 
                  /images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp 1200w" class="d-block w-100"
             alt="Photo avec une faible profondeur de champ montrant un homme portant un t-shirt blanc au milieu d'une foule."
-            loading="lazy">
+            loading="lazy" sizes="100vw">
         </div>
 
         <div class="carousel-item">
           <img src="/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" srcset="/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp 650w, 
                  /images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp 1200w" class="d-block w-100"
-            alt="Un homme et une femme s'échangeant un baiser." loading="lazy">
+            alt="Un homme et une femme s'échangeant un baiser." loading="lazy" sizes="100vw">
         </div>
 
       </div>
       <button class="carousel-control-prev slider-action" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
-        <div class="slider-action__icon-wrapper">
+        <span class="slider-action__icon-wrapper">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </div>
+        </span>
       </button>
       <button class="carousel-control-next slider-action" type="button" data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
-        <div class="slider-action__icon-wrapper">
+        <span class="slider-action__icon-wrapper">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </div>
+        </span>
       </button>
     </div>
-  </section>
+  </div>
   <section id="about">
     <div class="picture left">
       <img src="/images/portrait-nina-carducci.webp" alt="Photo de Nina Carducci">
     </div>
     <div id="about-me">
       <h2 class="about-me__title">A propos de moi</h2>
-      <strong>
-        <p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+        <p class="about-me__introduction"><strong>Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
-          immortels, voilà ce qui me fait vibrer.</p>
-      </strong>
+          immortels, voilà ce qui me fait vibrer.</strong>
+        </p>
       <p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
         figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux,
         ou le partager au plus grand nombre.
@@ -271,8 +270,8 @@
   <section class="quote">
     <figure>
       <blockquote>
-        <p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-          traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
+        <h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+          traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
       </blockquote>
       <figcaption class="quote__author">- Richard Avedon</figcaption>
     </figure>
@@ -282,7 +281,7 @@
       <div class="form-container">
         <h2>Une question ? Une demande de devis ?</h2>
         <p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-        <form action="" method="post">
+        <form method="post">
           <label for="nom">Nom</label>
           <input type="text" name="nom" id="nom">
           <label for="email">Email</label>
