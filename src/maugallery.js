@@ -1,4 +1,5 @@
 import $ from "jquery";
+import { Modal } from "bootstrap";
 
 $.fn.mauGallery = function (options) {
   var options = $.extend($.fn.mauGallery.defaults, options);
@@ -107,7 +108,8 @@ $.fn.mauGallery.methods = {
   },
   openLightBox(element, lightboxId) {
     $(`#${lightboxId}`).find(".lightboxImage").attr("src", element.attr("src"));
-    $(`#${lightboxId}`).modal("toggle");
+    new Modal(document.getElementById(lightboxId)).show()
+    //$(`#${lightboxId}`).modal("toggle");
   },
   prevImage() {
     let activeImage = null;
@@ -186,7 +188,7 @@ $.fn.mauGallery.methods = {
                               ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
                               : '<span style="display:none;" />'
                           }
-                          <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
+                          <img class="lightboxImage img-fluid mx-auto d-block" alt="Contenu de l'image affichée dans la modale au clique"/>
                           ${
                             navigation
                               ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
